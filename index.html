@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+    <h1 id="title" class="title">Clothes Purchase Behaviour Survey Form</h1>
+    <p id="description">Thank you for taking the time to tell us your preferences.</p>
+    <form id="survey-form" class="survey-form">
+        <!--basic information-->
+        <div class="info">
+            <div class="form-item">
+        <label id="name-label" for="name">*Name</label>
+      <input id="name" type="text" placeholder="Enter your name" required>
+      </div>
+      <div class="form-item">
+        <label id="email-label" for="email">*Email</label>
+     <input id="name" type="email" placeholder="Enter your email" required>
+     </div>
+     <div class="form-item">
+        <label id="number-label" for="number">*Age</label>
+     <input id="number" type="number" placeholder="Age" min="10" max="50" required>
+     </div>
+        </div>
+        <!--purchase behaviour-->
+        <div class="form-item">
+        <label for="dropdown">*How often do you buy clothes?</label>
+        <select id="dropdown">
+            <option value="default">Once a week</option>
+            <option value="Once every two weeks">Once every weeks</option>
+            <option value="Once a month">Once a month</option>
+            <option value="Other">Other</option>
+        </select>
+        </div>
+        <div class="form-item">
+        <label for="dropdown">*Which type of clothes you buy?</label>
+        <Select id="dropdown">
+            <option value="default">Designer clothes</option>
+            <option value="Second hand clothes">Second hand clothes</option>
+        </Select>
+        </div>
+        <!--brands-->
+        <div class="form-item">
+        <label>*Which clothing brands are you aware of?(Check appropriately):</label>
+        <div class="cloth-brands">
+        <input type="checkbox" name="cloth brands" value="1">Nike</input>
+        <input type="checkbox" name="cloth brands" value="2">Louis Vuitton</input>
+        <input type="checkbox" name="cloth brands" value="3">Hermes</input>
+        <input type="checkbox" name="cloth brands" value="4">Gucci</input>
+        <input type="checkbox" name="cloth brands" value="6">Adidas</input>
+        <input type="checkbox" name="cloth brands" value="7">Zara</input>
+        <input type="checkbox" name="cloth brands" value="8">Chanel</input>
+        <input type="checkbox" name="cloth brands" value="9">Prada</input>
+        <input type="checkbox" name="cloth brands" value="10">Versace</input>
+        </div>
+        </div>
+        <!--comment section-->
+        <div class="form-item">
+        <label for="comment">Any comments or suggestion:</label>
+        <textarea  id="comment" cols="" rows="6" placeholder="Enter your comment here.."></textarea>
+        </div>
+        <!--submition-->
+        <input id="submit" type="submit" value ="submit"></input>
+
+
+
+
+
+
+
+
+
+    </form>
+    </div>
+    
+</body>
+</html>
