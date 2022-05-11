@@ -9,27 +9,32 @@
 </head>
 <body>
     <div class="container">
+        <!-- The heading  -->
     <h1 id="title" class="title">Clothes Purchase Behaviour Survey Form</h1>
+     <!-- A small appreciation  -->
     <p id="description">Thank you for taking the time to tell us your preferences.</p>
     <form id="survey-form" class="survey-form">
         <!--basic information-->
         <div class="info">
             <div class="form-item">
-        <label id="name-label" for="name">*Name</label>
-      <input id="name" type="text" placeholder="Enter your name" required>
+                <!-- The name input  -->
+        <label class="font-w" id="name-label" for="name">Name</label>
+      <input  class="font-w" id="name" type="text" placeholder="Enter your name" required>
       </div>
       <div class="form-item">
-        <label id="email-label" for="email">*Email</label>
-     <input id="name" type="email" placeholder="Enter your email" required>
+          <!-- The email input  -->
+        <label class="font-w"  id="email-label" for="email">Email</label>
+     <input id="email" type="email" placeholder="Enter your email" required>
      </div>
      <div class="form-item">
-        <label id="number-label" for="number">*Age</label>
+         <!-- The age input  -->
+        <label  class="font-w" id="number-label" for="number">Age</label>
      <input id="number" type="number" placeholder="Age" min="10" max="50" required>
      </div>
         </div>
         <!--purchase behaviour-->
         <div class="form-item">
-        <label for="dropdown">*How often do you buy clothes?</label>
+        <p class="font-w" for="dropdown">How often do you buy clothes?<p/>
         <select id="dropdown">
             <option value="default">Once a week</option>
             <option value="Once every two weeks">Once every weeks</option>
@@ -38,36 +43,48 @@
         </select>
         </div>
         <div class="form-item">
-        <label for="dropdown">*Which type of clothes you buy?</label>
+        <p class="font-w" for="dropdown">Which type of clothes you buy?<p/>
         <Select id="dropdown">
             <option value="default">Designer clothes</option>
             <option value="Second hand clothes">Second hand clothes</option>
         </Select>
         </div>
+        <!-- The radio elements  -->
+        <p class="font-w">Which one of these clothing brands do you own in your closet?</p>
+<label>Nike</label>
+  <input type="radio" checked="checked" name="brand" value="Nike">
+  <!-- <span class="checkmark"></span> -->
+<label >Addidas</label>
+  <input type="radio" name="brand"  value="Addidas">
+  <!-- <span class="checkmark"></span> -->
+<label >Gucci</label>
+  <input type="radio" name="brand" value="Gucci">
+  <!-- <span class="checkmark"></span> -->
+
+
         <!--brands-->
         <div class="form-item">
-        <label>*Which clothing brands are you aware of?(Check appropriately):</label>
+        <p class="font-w">Which clothing brands are you aware of?(Check appropriately):</p>
         <div class="cloth-brands">
         <input type="checkbox" name="cloth brands" value="1">Nike</input>
         <input type="checkbox" name="cloth brands" value="2">Louis Vuitton</input>
         <input type="checkbox" name="cloth brands" value="3">Hermes</input>
         <input type="checkbox" name="cloth brands" value="4">Gucci</input>
-        <input type="checkbox" name="cloth brands" value="6">Adidas</input>
+        <input type="checkbox" name="cloth brands" value="6">Addidas</input>
         <input type="checkbox" name="cloth brands" value="7">Zara</input>
         <input type="checkbox" name="cloth brands" value="8">Chanel</input>
         <input type="checkbox" name="cloth brands" value="9">Prada</input>
-        <input type="checkbox" name="cloth brands" value="10">Versace</input>
         </div>
         </div>
         <!--comment section-->
         <div class="form-item">
-        <label for="comment">Any comments or suggestion:</label>
+        <p class="font-w" for="comment">Any comments or suggestion:<p/>
         <textarea  id="comment" cols="" rows="6" placeholder="Enter your comment here.."></textarea>
         </div>
         <!--submition-->
         <input id="submit" type="submit" value ="submit"></input>
 
-
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 
 
